@@ -1,0 +1,141 @@
+/* styles/style.css */
+
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+nav {
+  background-color: #06c;
+  display: flex;
+  justify-content: center;
+  padding: 0.7rem 0;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #004080;
+  outline: none;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section.notice {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+section.notice h2 {
+  color: #004080;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #06c;
+  padding-bottom: 0.3rem;
+}
+
+section.notice ul {
+  list-style: disc inside;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #004080;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (width <= 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  main {
+    margin: 1rem;
+  }
+}
+
+/* ===============================
+   Exams Page Styles
+   =============================== */
+
+.exam-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.exam-table th,
+.exam-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.exam-table th {
+  background-color: #004080;
+  color: #fff;
+}
+
+.exam-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.page-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
