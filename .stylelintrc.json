@@ -1,0 +1,5 @@
+{
+  "rules": {
+    "selector-attribute-name-case": "lower"
+  }
+}
