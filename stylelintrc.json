@@ -1,5 +1,5 @@
 {
   "rules": {
-    "property-case": "lower"
+    "custom-property-pattern": "^[a-z][a-z0-9-]*$"
   }
 }
