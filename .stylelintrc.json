@@ -1,5 +1,6 @@
 {
-  "rules": {
-    "property-case": "lower"
-  }
+    "rules":
+    {
+        "selector-type-case": "lower"
+    }
 }
