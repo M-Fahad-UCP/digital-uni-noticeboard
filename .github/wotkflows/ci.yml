@@ -72,7 +72,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
-          context: .
-          push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/digital-uni-noticeboard
-
+         context: .
+         push: true
+         tags: ${{ secrets.DOCKERHUB_USERNAME }}/digital-uni-noticeboard:latest
