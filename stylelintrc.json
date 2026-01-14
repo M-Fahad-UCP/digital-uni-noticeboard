@@ -1,3 +1,5 @@
 {
-  "extends": "stylelint-config-standard"
+  "rules": {
+    "selector-attribute-name-case": "lower"
+  }
 }
