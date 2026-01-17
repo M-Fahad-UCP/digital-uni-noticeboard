@@ -11,7 +11,6 @@ jobs:
   deploy:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-    environment: development
 
     steps:
       - name: Deploy to Render
@@ -21,7 +20,5 @@ jobs:
             exit 1
           fi
 
-          echo "Triggering Render deploy...."
-          curl -X POST ${{ secrets.RENDER_CALLBACK_URL }}
-
-         
+          echo "Triggering Render deploy..."
+          curl -f -X POST "${{ secrets.RENDER_CALLBACK_URL }}"
