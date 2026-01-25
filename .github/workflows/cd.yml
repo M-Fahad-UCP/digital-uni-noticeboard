@@ -21,7 +21,11 @@ jobs:
             exit 1
           fi
 
+<<<<<<< HEAD
           echo "Triggering Render deploy..."
+=======
+          echo "Triggering Render deploy...."
+>>>>>>> f1302e6ba853165f1ce92aaf6e6e51ba08aac86b
           curl -X POST ${{ secrets.RENDER_CALLBACK_URL }}
 
          
